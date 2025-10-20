@@ -9,14 +9,7 @@ class Compte{
   void depot(double montant){
     if (montant>0){
       _solde+=montant;
-      print("Le solde est de $_solde \$");
-    }else{
-      print("Le montant doit etre superieur a 0");
     }
   }
-}
-void main(){
-  Compte compte1=Compte("123456",1000.0);
-  compte1.depot(1500.0);
-  
+
 }
