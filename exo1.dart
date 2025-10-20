@@ -10,6 +10,16 @@ void afficherCouleur(){
   print("R:$r,G:$g,B:$b");
 
 }
-
+}
+void main(){
+  
+Couleur r=Couleur.rouge();
+Couleur g=Couleur.vert();
+Couleur b=Couleur.bleu();
+Couleur c1=Couleur(30,90,60);
+r.afficherCouleur();
+g.afficherCouleur();
+b.afficherCouleur();
+c1.afficherCouleur();
 
 }
