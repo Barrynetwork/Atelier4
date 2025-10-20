@@ -8,7 +8,12 @@ move(double dx,double dy){
 
 }
 display(){
-  print("coordonnées x:$_x, coordonnées y:$_y");
+  print("coordonnees x:$_x, coordonnees y:$_y");
 }
-
+}
+void main(){
+  var pt=Point(2,5);
+  pt.display();
+  pt.move(-1,3);
+  pt.display();
 }
