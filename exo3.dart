@@ -4,7 +4,7 @@ class Compte{
   
   Compte(this.numeroCompte,[this._solde=0.0]);
   String get solde{
-    return "Le solde est de $_solde \$";
+    return " $_solde \$";
   }
   void depot(double montant){
     if (montant>0){
@@ -17,6 +17,6 @@ class Compte{
 }
 void main(){
   Compte compte1=Compte("123456",1000.0);
-  compte1.depot(-1500.0);
+  compte1.depot(1500.0);
   
 }
