@@ -11,5 +11,10 @@ class Compte{
       _solde+=montant;
     }
   }
-
+}
+void main(){
+  Compte compte1=Compte("123456",1000.0);
+  compte1.depot(1500.0);
+  print(" le solde est ${compte1.solde}"); 
+  
 }
