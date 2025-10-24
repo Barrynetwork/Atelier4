@@ -23,4 +23,12 @@ class Rectangle extends Forme{
     return longueur*largeur;
   }
 }
+void main(){
+  Cercle cercle=Cercle(7);
+  cercle.afficherMessage();
+  print("L'aire du cercle est ${cercle.calculerAire()}");
 
+  Rectangle rectangle=Rectangle(12,8);
+  rectangle.afficherMessage();
+  print("L'aire du rectangle est ${rectangle.calculerAire()}");
+}
