@@ -5,4 +5,10 @@ class Tache{
     nombreTotal++;
   }
 }
+void main(){
+  Tache tache1=Tache("faire les devoirs");
+  Tache tache2=Tache("Suivre les cours");
+  Tache tache3=Tache("etre a l'heure");
+  print("le nombre total de tache est ${Tache.nombreTotal}");
+}
 
