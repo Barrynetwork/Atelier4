@@ -23,3 +23,12 @@ class BaseDeDonnees implements Connectable{
     print("BaseDeDonnees: deconnexion reussie");
   }
 }
+void main(){
+  ServeurAPI serveur=ServeurAPI();
+  BaseDeDonnees bdd=BaseDeDonnees();
+  List<Connectable> services=[serveur,bdd];
+  for (var service in services){
+    service.connecter("Barry");
+    service.deconnecter();
+  }
+}
