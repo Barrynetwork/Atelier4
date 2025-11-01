@@ -27,5 +27,9 @@ void main(){
   livre1.afficherinfos();
   Livre livre2=Livre("Soleil des independances","Ahmadou kourouma");
   livre2.afficherinfos();
- 
+  Roman roman1=Roman("Femme noire","Leopold Sedar Senghor","Poesie");
+  roman1.affichergenre();
+  Roman roman2=Roman("Contemplation","Victor Hugo","Romance");
+  roman2.affichergenre();
+  Livre.affichernombrelivre();
 }
