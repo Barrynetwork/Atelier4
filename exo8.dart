@@ -15,8 +15,13 @@ class Livre {
     print("le nombre est ${Livre.totallivres}");
   }
 }
-
-
+class Roman extends Livre{
+  String genre;
+  Roman(super.titre, super.auteur, this.genre);
+  affichergenre(){
+    print("titre:$titre, auteur:$auteur, genre:$genre");
+  }
+}
 void main(){
   Livre livre1=Livre("Leuk le lievre","Leopold Sedar Senghor");
   livre1.afficherinfos();
